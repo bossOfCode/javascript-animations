@@ -13,17 +13,14 @@ preferences:
     options:
       - label: GitHub.com
         value: dotcom
-      - label: Command line
-        value: cli
-        selected: true
-      - label: GitHub Desktop
-        value: desktop
       - label: VS Code
         value: visual-studio
 steps:
   - title: Create a car 
     description: Create the car used in animations
-    event: pull_request.open
+    event: 
+      - pull_request.open
+      - pull_request.push
     actions:
       - type: createPullRequest
         title: Create a car
