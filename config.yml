@@ -5,3 +5,27 @@ template:
   repo: javascript-animations-template
 helpUrl: Khan Academy video
 helpText: https://www.youtube.com/embed/us3_U9xnttc
+preferences:
+  - type: dropdown
+    name: gitTool
+    label: Preferred Git tool
+    description: You can follow this course's instructions using whichever Git tool you prefer.
+    options:
+      - label: GitHub.com
+        value: dotcom
+      - label: Command line
+        value: cli
+        selected: true
+      - label: GitHub Desktop
+        value: desktop
+      - label: VS Code
+        value: visual-studio
+steps:
+  - title: Create a car 
+    description: Create the car used in animations
+    event: pull_request.open
+    actions:
+      - type: createPullRequest
+        title: Create a car
+        head: create-car
+        body: pr1.md
