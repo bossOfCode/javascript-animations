@@ -2,3 +2,5 @@ title: Intro to Javascript
 description: If you are looking for a quick and fun introduction to JS, you've found it. This course will help you create your own animations.
 template:
   repo: javascript-animations-template
+helpUrl: Khan Academy video
+helpText: https://www.youtube.com/embed/us3_U9xnttc
