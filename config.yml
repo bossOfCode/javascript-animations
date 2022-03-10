@@ -9,7 +9,7 @@ preferences:
   - type: dropdown
     name: gitTool
     label: Preferred Git tool
-    description: You can follow this course's instructions using whichever Git tool you prefer.
+    description: Which Git tool would you perfer?
     options:
       - label: GitHub.com
         value: dotcom
@@ -21,8 +21,11 @@ steps:
     event: 
       - pull_request.open
       - pull_request.push
+      - pull_request.close
     actions:
       - type: createPullRequest
         title: Create a car
         head: create-car
         body: 1-welcome.md
+        
+          
