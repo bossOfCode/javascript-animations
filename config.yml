@@ -26,6 +26,8 @@ steps:
       - type: createPullRequest
         title: Create a car
         head: create-car
-        body: 1-welcome.md
-        
+        base: animate-car
+        body: pr-body.md
+        comments:
+          - 1-welcome.md
           
