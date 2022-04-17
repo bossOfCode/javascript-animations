@@ -12,7 +12,7 @@ We're here.
   <summary>
     We'll answer these questions in the course:
   </summary>
-    •  What is JS, and why is it *so* important?<br>
+    •  What is JS, and why is it <strong>so</strong> important?<br>
     •  How do you embed JS into HTML?<br>
     •  How do you create animations(moving pictures) with Prossesing JS?<br>
     •  What is the DOM node and Tree?
@@ -25,7 +25,7 @@ When you're done, you'll be able to:
 
 # What you'll build
 
-![image](https://user-images.githubusercontent.com/95505913/157544835-35d29c43-c85d-4c10-878a-194769a603c3.png)
+![image](https://cdn.kastatic.org/ka-perseus-images/d1e0c882458033c01fc8484273a2c3ed603a1614.gif)
 
 [See it in action here](https://cdn.kastatic.org/ka-perseus-images/d1e0c882458033c01fc8484273a2c3ed603a1614.gif)
 
@@ -35,7 +35,6 @@ Before taking this course, you should know:
 - HTML
 - CSS
 > If you don't know HTML or CSS, go to either [Khan Academy](https://khanacademy.org/computing/computer-programming/html-css) for both HTML and CSS, Codecademy for both [HTML](https://www.codecademy.com/learn/learn-html) and [CSS](https://www.codecademy.com/learn/learn-css), or Github Lab for [HTML](lab.github.com/githubtraining/introduction-to-html).
-> # Project used
 
 # Audience
 
