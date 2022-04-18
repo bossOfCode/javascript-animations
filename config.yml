@@ -20,9 +20,7 @@ before:
     title: Create a car
     head: create-car
     base: animate-car
-    body: pr-body.md
-    comments:
-      - 1-welcome.md
+    body: 1-welcome.md  
 steps:
   - title: Introduction and creation
     description: Create a car that is used in the animations
