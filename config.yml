@@ -15,19 +15,19 @@ preferences:
         value: dotcom
       - label: VS Code
         value: visual-studio
+before:
+  - type: createPullRequest
+    title: Create a car
+    head: create-car
+    base: animate-car
+    body: pr-body.md
+    comments:
+      - 1-welcome.md
 steps:
-  - title: Create a car 
-    description: Create the car used in animations
+  - title: Introduction and creation
+    description: Create a car that is used in the animations
     event: 
-      - pull_request.open
       - pull_request.push
       - pull_request.close
     actions:
-      - type: createPullRequest
-        title: Create a car
-        head: create-car
-        base: animate-car
-        body: pr-body.md
-        comments:
-          - 1-welcome.md
           
