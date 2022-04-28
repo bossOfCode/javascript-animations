@@ -15,7 +15,23 @@ preferences:
         value: dotcom
       - label: VS Code
         value: visual-studio
+  - type: dropdown
+    name: language
+    label: Preferred Language
+    description: Which language would you perfer?
+    options:
+      - label: English
+        value: en
+      - label: 中文
+        value: cn
+tags: [
+  "JavaScript", "HTML", "CSS"
+]
 before:
+  - type: updateBranchProtection
+    branch: main
+    required_pull_request_reviews:
+      include_admins: true
   - type: createPullRequest
     title: Create a car
     head: create-car
@@ -24,8 +40,6 @@ before:
 steps:
   - title: Introduction and creation
     description: Create a car that is used in the animations
-    event: 
-      - pull_request.push
-      - pull_request.close
+    event: pull_request.open
     actions:
           
