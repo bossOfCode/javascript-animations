@@ -1,9 +1,6 @@
-# Welcome to "Intro to JS", @{{ user.username }}!
-In this course, you are going to create animation of a car.
-[Demo: finished product](https://cdn.kastatic.org/ka-perseus-images/d1e0c882458033c01fc8484273a2c3ed603a1614.gif)
-
-We will start by making a car.
-# Step 1 : add a `background` and `draw function`
+# You're doing great, @{{ user.username }}!
+Now, we will make a car.
+# Step 2 : add a `background` and `draw function`
 You might be wondering, What ***is*** a `draw function`?
 > The `draw function` helps us repeatedly draw the picture, so it can be animated. Somewhat like the function in a GIF.
  - [ ] First, navigate to the `index.js` file on the `create-car` branch.
