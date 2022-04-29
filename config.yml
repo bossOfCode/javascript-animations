@@ -32,14 +32,31 @@ before:
     branch: main
     required_pull_request_reviews:
       include_admins: true
+  - type: createIssue
+    title: Watch the video
+    body: 0-introduction.md
+    store:
+      is_1_url: {{ results.data.html_url }}
   - type: createPullRequest
     title: Create a car
     head: create-car
     base: animate-car
-    body: 1-welcome.md  
+    body: 1-create-car.md
+    store:
+      pr_1_url: {{ results.data.html_url }}
 steps:
-  - title: Introduction and creation
+  - title: Introductary Video
+    description: Get an overview of what you're learning
+    event: 
+      - issue.open
+      - pull_request.open
+    link: {{ store.is_1_url }}
+    actions:
+      - type: respond
+        with: 0_next-step.md
+  - title: Create a car
     description: Create a car that is used in the animations
-    event: pull_request.open
+    event: issue.closed
+    link: {{ store.pr_1_url }}
     actions:
           
