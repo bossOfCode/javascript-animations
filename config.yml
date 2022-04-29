@@ -53,7 +53,7 @@ steps:
     link: {{ store.is_1_url }}
     actions:
       - type: respond
-        with: 0_next-step.md
+        with: 0-next-step.md
   - title: Create a car
     description: Create a car that is used in the animations
     event: issue.closed
