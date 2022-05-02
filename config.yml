@@ -3,8 +3,6 @@ description: If you are looking for a quick and fun introduction to JS, you've f
 template:
   name: js-animation
   repo: javascript-animations-template
-helpUrl: Khan Academy video
-helpText: https://www.youtube.com/embed/us3_U9xnttc
 preferences:
   - type: dropdown
     name: gitTool
@@ -51,7 +49,12 @@ steps:
       - issue.open
       - pull_request.open
     link: {{ store.is_1_url }}
+    video: https://www.youtube.com/embed/us3_U9xnttc
     actions:
+      - type: gate
+        left: {{ steps.title."Introductary Video".video }}
+        operator: ===
+        right:  complete
       - type: respond
         with: 0-next-step.md
   - title: Create a car
