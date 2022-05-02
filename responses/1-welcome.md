@@ -13,4 +13,7 @@ You might be wondering, What ***is*** a `draw function`?
    `}` <br>
    `}` <br>
 > var stands for varible. Varibles can replace long strings, booleans, and math equations in Prossesing JS.
- - [ ] Last step: push the changes into the `create-car` branch. When I see the push coming through, I'll lead you to the next step!
+ - [ ] Last step: push the changes into the `create-car` branch.
+ ----------------------
+ <h3 align="center"> When I see the push coming through, I'll lead you to the next step! </h3>
+ 
