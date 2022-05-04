@@ -51,9 +51,12 @@ steps:
     link: {{ store.is_1_url }}
     actions:
       - type: gate
-        left: {{ steps.title."Introductary Video".video }}
+        left: {{ store.is_1_url.comment }}
         operator: ===
-        right:  complete
+        right:  "github-learning-bot done"
+        else:
+        - type: respond
+          with: 400-could-not-understand.md
       - type: respond
         with: 0-next-step.md
   - title: Create a car
