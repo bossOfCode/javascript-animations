@@ -20,8 +20,12 @@ preferences:
     options:
       - label: English
         value: en
-      - label: 中文
-        value: cn
+      - label: 中文（台灣）
+        value: cn/tw
+      - label: 中文（香港）
+        value: cn/hk
+      - label: Espanõl
+        value: es
 tags: [
   "JavaScript", "HTML", "CSS"
 ]
