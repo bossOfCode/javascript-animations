@@ -56,7 +56,7 @@ steps:
         right:  "github-learning-bot done"
         else:
         - type: respond
-          with: 400-could-not-understand.md
+          with: er-400-misunderstand.md
       - type: respond
         with: 0-next-step.md
   - title: Create a car
