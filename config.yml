@@ -3,8 +3,6 @@ description: If you are looking for a quick and fun introduction to JS, you've f
 template:
   name: js-animation
   repo: javascript-animations-template
-helpUrl: Khan Academy video
-helpText: https://www.youtube.com/embed/us3_U9xnttc
 preferences:
   - type: dropdown
     name: gitTool
@@ -22,8 +20,12 @@ preferences:
     options:
       - label: English
         value: en
-      - label: 中文
-        value: cn
+      - label: 中文（台灣）
+        value: cn/tw
+      - label: 中文（香港）
+        value: cn/hk
+      - label: Espanõl
+        value: es
 tags: [
   "JavaScript", "HTML", "CSS"
 ]
@@ -52,6 +54,13 @@ steps:
       - pull_request.open
     link: {{ store.is_1_url }}
     actions:
+      - type: gate
+        left: {{ store.is_1_url.comment }}
+        operator: ===
+        right:  "github-learning-bot done"
+        else:
+        - type: respond
+          with: er-400-misunderstand.md
       - type: respond
         with: 0-next-step.md
   - title: Create a car
