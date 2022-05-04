@@ -12,3 +12,4 @@ Now you may merge this PR.
 
 ------------
 - [ ] Step 2c: Click on the button labeled 'Merge pull request'.
+> Note: you choose what to do.
